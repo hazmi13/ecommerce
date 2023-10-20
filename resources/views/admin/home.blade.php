@@ -349,7 +349,12 @@
                       </div>
                     </div>
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Log out</p>
+
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="btn btn-dark">Logout</button>
+                    </form>
+
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>

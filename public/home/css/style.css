@@ -262,7 +262,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 90px 0 75px 0;
+  padding: 20px;
 }
 
 .slider_section .row {
@@ -317,8 +317,9 @@ a:focus {
 }
 
 .slider_section .carousel-indicators {
-  position: unset;
-  margin: 0;
+  display: flex;
+  height: 5vh;
+  margin-left: 600px;
   margin-top: 45px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -1125,7 +1126,7 @@ form input[type="submit"]:focus {
     font-weight: 400;
 }
 
-http://kute-themes.com/html/boutique/html/index.html
+/* 
+https://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
-https://preview.hasthemes.com/xoss-preview/xoss/index.html
-
+https://preview.hasthemes.com/xoss-preview/xoss/index.html */
