@@ -7509,6 +7509,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  color:black;
   margin-bottom: 0.5rem; }
 
 p {
@@ -20340,7 +20341,7 @@ div.tagsinput {
 /* Navbar */
 .navbar {
   font-weight: normal;
-  background: #191c24;
+  background: #d8deec;
   left: 244px;
   transition: left 0.25s ease;
   -webkit-transition: left 0.25s ease;
@@ -20354,7 +20355,7 @@ div.tagsinput {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #191c24;
+    background: #d8deec;
     width: 244px;
     height: 70px; }
     @media (max-width: 991px) {
@@ -20623,7 +20624,7 @@ div.tagsinput {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 70px);
-  background: #191c24;
+  background: #fff;
   font-weight: normal;
   padding: 0;
   width: 244px;
@@ -20637,7 +20638,7 @@ div.tagsinput {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #191c24;
+    background: #d8deec;
     width: 244px;
     height: 70px; }
     @media (max-width: 991px) {
@@ -20902,10 +20903,10 @@ div.tagsinput {
           height: auto;
           border-top: 0; }
           .sidebar .nav.sub-menu .nav-item .nav-link.active {
-            color: #ffffff;
+            color: blue;
             background: transparent; }
           .sidebar .nav.sub-menu .nav-item .nav-link:hover {
-            color: #ffffff; }
+            color: blue; }
         .sidebar .nav.sub-menu .nav-item:hover {
           background: transparent; }
     .sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-category):not(.account-dropdown) > .nav-link {
@@ -21094,6 +21095,7 @@ div.tagsinput {
   min-height: 100vh;
   display: -webkit-flex;
   display: flex;
+  background: #d8deec;
   -webkit-flex-direction: row;
   flex-direction: row;
   padding-left: 0;
@@ -21126,7 +21128,7 @@ div.tagsinput {
       width: 100%; } }
 
 .content-wrapper {
-  background: #000000;
+  background: #d8deec;
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;

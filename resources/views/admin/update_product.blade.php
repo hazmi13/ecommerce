@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+
+    <base href="/public">
     @include('admin/css')
 
     <style type="text/css">
@@ -57,59 +59,65 @@
                 
                 <div class="div_center">
 
-                    <h1 class="font_size">Add Product</h1>
+                    <h1 class="font_size">Update Product</h1>
 
-                <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{url('/update_product_confirm',$product->id)}}" method="POST" enctype="multipart/form-data">
 
                 @csrf
 
                 <div class="div_design">
+
+                
                     <label >Product Title</label>
-                    <input class="text_color" type="text" required="" name="title" placeholder="Write the product title">
+                    <input class="text_color" type="text" required="" name="title" placeholder="Write the product title" value="{{$product->title}}">
  
                 </div>
                 <div class="div_design">
                     <label >Product Description</label>
-                    <input class="text_color" type="text" required="" name="description" placeholder="Write the product description">
+                    <input class="text_color" type="text" required="" name="description" placeholder="Write the product description" value="{{$product->description}}">
 
                 </div>
                 <div class="div_design">
                     <label >Product Price</label>
-                    <input class="text_color" type="number" required="" name="price" placeholder="Write the product price">
+                    <input class="text_color" type="number" required="" name="price" placeholder="Write the product price" value="{{$product->price}}">
 
                 </div>
                 <div class="div_design">
                     <label >Discount Price</label>
-                    <input class="text_color" type="number"  name="dis_price" placeholder="Write discount if apply">
+                    <input class="text_color" type="number"  name="dis_price" placeholder="Write discount if apply" value="{{$product->discount_price}}">
 
                 </div>
                 <div class="div_design">
                     <label >Product Quantity</label>
-                    <input class="text_color" type="number" required="" min="0" name="quantity" placeholder="Write the quantity">
+                    <input class="text_color" type="number" required="" min="0" name="quantity" placeholder="Write the quantity" value="{{$product->quantity}}">
 
                 </div>
            
                 <div class="div_design">
                     <label >Product Category</label>
-                    <select class="text_color" name="category" required="">
-                        <option value="" selected="">Add a category here</option>
+                    <select class="text_color" name="category" required="" >
+                        <option value="{{$product->category}}" selected="">{{$product->category}}</option>
 
                         @foreach($category as $category)
 
                         <option value="{{$category-> category_name}}">{{$category-> category_name}}</option>
 
-                        @endforeach
+                        @endforeach 
 
                     </select>
 
                 </div>
                 <div class="div_design">
-                    <label >Product Image :</label>
-                    <input type="file" name="image" id="" required="">
+                    <label >Current Product Image :</label>
+                    <img style="margin:auto;" width="150" height="150" src="/product/{{$product->image}}" alt="">
+                </div>
+                <div class="div_design">
+                    <label >Change Product Image :</label>
+                    <input type="file" name="image" id="" >
                 </div>
                 <div class="div_design">
                 
-                    <input type="submit" style="color:black;" value="Add Product" class="btn btn-primary" >
+                    <input type="submit" style="color:black;" value="Update Product" class="btn btn-primary" >
                 </div>
             </form>
 

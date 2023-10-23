@@ -11,6 +11,7 @@
         .h2_font{
           font-size: 40px;
           padding-bottom: 40px;
+          color: black;
         }
         .input_color{
           color: black;
@@ -21,7 +22,9 @@
           text-align: center;
           margin-top: 30px;
           border: 3px solid blue;
+          color: black;
         }
+     
 
     </style>
   </head>
@@ -56,7 +59,7 @@
                   @csrf
                    
                   <input class="input_color" type="text" name="category" placeholder="Write category name">
-                  <input type="submit" class="btn btn-primary" name="submit" value="Add Category">
+                  <input type="submit" class="btn btn-primary" name="submit" value="Add Category" style="color:black;">
                 </form>
             </div>
             <table class="table_center">
