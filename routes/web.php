@@ -34,6 +34,11 @@ route::post('/add_product', [AdminController::class,'add_product']);
 route::get('/delete_product/{id}', [AdminController::class,'delete_product']);
 route::get('/update_product/{id}', [AdminController::class,'update_product']);
 route::post('/update_product_confirm/{id}', [AdminController::class,'update_product_confirm']);
+route::get('/product_details/{id}', [HomeController::class,'product_details']);
+route::post('/add_cart/{id}', [HomeController::class,'add_cart']);
+route::get('/show_cart', [HomeController::class,'show_cart']);
+route::get('/remove_cart/{id}', [HomeController::class,'remove_cart']);
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
